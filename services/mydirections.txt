@@ -1035,4 +1035,4 @@ This is part of your first practical lab in Week 3
 3. Having 3 or more functioning unique/novel and well-thought out parameters from the API earns 70-90%. Explore the API documentation for parameters we have not used.
 4. Tell the story of your route. Include more than 2 "stops", and/or including additional links to display PlaceIDs on Google Maps, or other innovative presentations earns 80%-100%. (4 stops - Montreal, Toronto, Ottawa, Kingston -> using PlaceIDs) 
 
-Story: My trip from Montreal to Toronto in the Summer (road trip with friends). Montreal -> Ottawa -> Kingston -> Toronto route was a sceanic route during fall time
+Story: My trip from Toronto to Montreal in the Summer (road trip with friends). 
