@@ -106,8 +106,7 @@
 			stylers: [{ color: "#17263c" }],
 		      },
 		    ],
-		  });
-		document
+			  document
 		    .getElementById("toggle")!
 		    .addEventListener("click", toggleStreetView);
 
@@ -142,6 +141,8 @@
 		      heading: 265,
 		      pitch: 0,
 		}
+		  });
+		
 	    function toggleStreetView(): void {
 		  const toggle = panorama.getVisible();
 
