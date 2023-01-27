@@ -40,20 +40,21 @@
     </style>
 	  
     <script> 
+	// Function for street view toggle. The user can view the beautiful historical landmarks of South Korea. Function adapted from https://developers.google.com/maps/documentation/javascript/examples/streetview-overlays#maps_streetview_overlays-javascript
 	let panorama;
 
 	function initMap() {
-	  const bulguksa = { lat: 35.7900, lng: 129.3321 };
+	  const bulguksa = { lat: 35.7900, lng: 129.3321 }; //Location of Bulguksa, SK.
 	  // Set up the map
 	  const map = new google.maps.Map(document.getElementById("map"), {
 	    center: bulguksa,
-	    zoom: 17,
+	    zoom: 17, //Zoom level to show all the markers, including the nearest bus stop marker for transit users. 
 	    streetViewControl: false,
 	  });
 
 	  document.getElementById("toggle").addEventListener("click", toggleStreetView);
 
-	  // Set up the markers on the map
+	  // Set up custom markers (Marker library used here). I want to highlight some of my favourite landmarks in the area. These, in my opinion, are a "must-see" when you visit SK!
 	  const dabotab = new google.maps.Marker({
 	    position: { lat: 35.79002532182344, lng: 129.33222813778508 },
 	    map,
@@ -91,7 +92,7 @@
 	  );
 	}
 
-	function toggleStreetView() {
+	function toggleStreetView() { 
 	  const toggle = panorama.getVisible();
 
 	  if (toggle == false) {
@@ -107,7 +108,7 @@
   </head>
   <body>
     <div id="floating-panel">
-      <input type="button" value="Toggle Street View" id="toggle" />
+      <input type="button" value="Toggle Street View" id="toggle" /> 
     </div>
     <div id="map"></div>
 
