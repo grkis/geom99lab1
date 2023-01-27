@@ -47,7 +47,7 @@
 	  // Set up the map
 	  const map = new google.maps.Map(document.getElementById("map"), {
 	    center: astorPlace,
-	    zoom: 18,
+	    zoom: 14,
 	    streetViewControl: false,
 	  });
 
@@ -55,22 +55,22 @@
 
 	  // Set up the markers on the map
 	  const cafeMarker = new google.maps.Marker({
-	    position: { lat: 40.730031, lng: -73.991428 },
+	    position: { lat: 35.79002532182344, lng: 129.33222813778508 },
 	    map,
-	    icon: "https://chart.apis.google.com/chart?chst=d_map_pin_icon&chld=cafe|FFFF00",
-	    title: "Cafe",
+	    icon: "https://chart.apis.google.com/chart?chst=d_map_pin_icon&chld=star|FFFF00",
+	    title: "Dabotab",
 	  });
 	  const bankMarker = new google.maps.Marker({
-	    position: { lat: 40.729681, lng: -73.991138 },
-	    map,
-	    icon: "https://chart.apis.google.com/chart?chst=d_map_pin_icon&chld=dollar|FFFF00",
-	    title: "Bank",
-	  });
-	  const busMarker = new google.maps.Marker({
-	    position: { lat: 40.729559, lng: -73.990741 },
+	    position: { lat: 35.78595876475861, lng: 129.32897030647402 },
 	    map,
 	    icon: "https://chart.apis.google.com/chart?chst=d_map_pin_icon&chld=bus|FFFF00",
 	    title: "Bus Stop",
+	  });
+	  const busMarker = new google.maps.Marker({
+	    position: { lat: 35.79011070520731, lng: 129.33208779089082 },
+	    map,
+	    icon: "https://chart.apis.google.com/chart?chst=d_map_pin_icon&chld=star|FFFF00",
+	    title: "Bulguksa",
 	  });
 
 	  // We get the map's default panorama and set up some defaults.
