@@ -43,10 +43,10 @@
 	let panorama;
 
 	function initMap() {
-	  const astorPlace = { lat: 35.7900, lng: 129.3321 };
+	  const bulguksa = { lat: 35.7900, lng: 129.3321 };
 	  // Set up the map
 	  const map = new google.maps.Map(document.getElementById("map"), {
-	    center: astorPlace,
+	    center: bulguksa,
 	    zoom: 17,
 	    streetViewControl: false,
 	  });
@@ -59,6 +59,12 @@
 	    map,
 	    icon: "https://chart.apis.google.com/chart?chst=d_map_pin_icon&chld=star|FFFF00",
 	    title: "Dabotab",
+	  });
+	  const cafeMarker = new google.maps.Marker({
+	    position: { lat: 35.79000814947042, lng: 129.33200560929356 },
+	    map,
+	    icon: "https://chart.apis.google.com/chart?chst=d_map_pin_icon&chld=star|FFFF00",
+	    title: "Seokgatap",
 	  });
 	  const bankMarker = new google.maps.Marker({
 	    position: { lat: 35.78595876475861, lng: 129.32897030647402 },
@@ -76,7 +82,7 @@
 	  // We get the map's default panorama and set up some defaults.
 	  // Note that we don't yet set it visible.
 	  panorama = map.getStreetView(); // TODO fix type
-	  panorama.setPosition(astorPlace);
+	  panorama.setPosition(bulguksa);
 	  panorama.setPov(
 	    /** @type {google.maps.StreetViewPov} */ {
 	      heading: 265,
